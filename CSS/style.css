@@ -1,0 +1,111 @@
+
+.mainContent {
+    line-height: 25px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.content {
+    width: 70%;
+    float: left;
+}
+
+.topcontent {
+    background-color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2px;
+}
+
+.bottomcontent {
+    background-color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 3% 5%;
+    margin-top: 2px;
+}
+
+.top-sidebar {
+    width: 21%;
+    float: left;
+    background-color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-left: 3%;
+    padding: 2% 3%;
+}
+
+.middle-sidebar {
+    width: 21%;
+    float: left;
+    background-color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-left: 3%;
+    padding: 2% 3%;
+}
+
+.bottom-sidebar {
+    width: 21%;
+    float: left;
+    background-color: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-left: 3%;
+    padding: 2% 3%;
+}
+/*
+** below are the default settings used on desktops, laptops, etc
+*/
+#formHeading {
+    color: navy;
+    font-size: 2em;
+}
+
+#addItemButton {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ececec+0,afafaf+100 */
+    background: #ececec; /* Old browsers */
+    background: -moz-linear-gradient(top, #ececec 0%, #afafaf 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ececec 0%,#afafaf 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ececec 0%,#afafaf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#afafaf',GradientType=0 ); /* IE6-9 */
+    border-radius: 5px 5px;
+    color: white;
+    font-size: 1.5em;
+    width: 100px;
+}
+
+input[type=text] {
+    padding: 5px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px 5px;
+    font-size: 1.5em;
+    margin: 0 0;
+    float: unset;
+    width: 25%;
+}
+
+/*
+** for smaller screens (ie phones), use the settings below
+*/
+@media only screen and (max-width: 550px) {
+
+    #formHeading {
+        clear: both;
+        color: green;
+        font-size: 1em;
+    }
+
+    #addItemButton {
+        font-size: 1em;
+        width: 50px;
+    }
+}

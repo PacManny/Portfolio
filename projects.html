@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="projectsPage">
+        <header>
+            <h2 id="formHeading"> This is a basic Form. Enter something below and click the Add button.</h2>
+            <div class="newItemDiv">
+                Your Entry:
+                <input type="text" id="newItem">
+                <input type="submit" value="Add" id="addItemButton">
+            </div>
+        </header>
+        <section id="itemListSection">
+            <div id="itemListDiv">
+                <!-- new items will be added here via the JS code -->
+            </div>
+        </section>
+        <!-- load jQuery using a CDN-->
+        <script src="https://code.jquery.com/jquery-1.12.3.min.js"
+                integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
+                crossorigin="anonymous">
+        </script>
+        <!-- load my JS code from local directory -->
+        <script type="text/javascript" src="formExample.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+body {
+    /*background-image: url('img.jpg');*/
+    color: #000305;
+    font-size: 87.5%; /* base font size is 14px */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Hamburger Icon */
+
+.hamIcon {
+    display: none;
+    height: 85px;
+    border-bottom: thin solid #666;
+}
+
+    .hamIcon #ham-nav {
+        float: right;
+        width: 35px;
+        height: 35px;
+        position: relative;
+        margin: 25px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+
+        .hamIcon #ham-nav span {
+            display: block;
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            margin: 0px;
+            background: #666;
+            border-radius: 9px;
+            opacity: 1;
+            left: 0;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: .25s ease-in-out;
+            -moz-transition: .25s ease-in-out;
+            -o-transition: .25s ease-in-out;
+            transition: .25s ease-in-out;
+        }
+
+            .hamIcon #ham-nav span:nth-child(1) {
+                top: 0px;
+            }
+
+            .hamIcon #ham-nav span:nth-child(2), #ham-nav span:nth-child(3) {
+                /*top: 18px;*/
+                top: 10px;
+            }
+
+            .hamIcon #ham-nav span:nth-child(4) {
+                /*top: 36px;*/
+                top: 20px;
+            }
+
+        .hamIcon #ham-nav.open span:nth-child(1) {
+            top: 18px;
+            width: 0%;
+            left: 50%;
+        }
+
+        .hamIcon #ham-nav.open span:nth-child(2) {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .hamIcon #ham-nav.open span:nth-child(3) {
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+
+        .hamIcon #ham-nav.open span:nth-child(4) {
+            top: 18px;
+            width: 0%;
+            left: 50%;
+        }
+/*
+** below are the default settings used on desktops, laptops, etc
+*/
+
+/*Nav*/
+
+.mainHeader {
+    width: 100%;
+    margin-top: 54px;
+    border-bottom: thin solid #666;
+}
+
+    .mainHeader img {
+        width: 30%;
+        height: auto;
+        margin: 2% 0;
+    }
+
+    .mainHeader nav {
+        background-color: transparent;
+        height: 40px;
+
+    }
+
+        .mainHeader nav ul {
+            list-style: none;
+            margin: 0 auto;
+        }
+
+            .mainHeader nav ul li {
+                float: left;
+                display: inline;
+            }
+
+        .mainHeader nav a:link, .mainHeader nav a:visited {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0a0a0a+51,666666+100&0+1,0.58+58,0.65+100 */
+          background: -moz-linear-gradient(top,  rgba(10,10,10,0) 1%, rgba(10,10,10,0.51) 51%, rgba(23,23,23,0.58) 58%, rgba(102,102,102,0.65) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(top,  rgba(10,10,10,0) 1%,rgba(10,10,10,0.51) 51%,rgba(23,23,23,0.58) 58%,rgba(102,102,102,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom,  rgba(10,10,10,0) 1%,rgba(10,10,10,0.51) 51%,rgba(23,23,23,0.58) 58%,rgba(102,102,102,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0a0a', endColorstr='#a6666666',GradientType=0 ); /* IE6-9 */
+
+
+            color: #fff;
+            display: inline-block;
+            padding: 10px 25px;
+            height: 20px;
+        }
+
+        .mainHeader nav a:hover, .mainHeader nav a:active,
+        .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+            background-color: #B00101;
+            text-shadow: none;
+        }
+
+
+/*
+** for smaller screens (ie phones), use the settings below
+*/
+@media only screen and (max-width: 740px ) {
+    .mainHeader {
+    margin-top: 0px;
+}
+    #menuList {
+        display: none;
+    }
+
+    .hamIcon {
+        display: block;
+    }
+
+    #menuList {
+        display: none;
+        z-index: 1000000;
+        height: auto;
+        font-weight: bold;
+        font-size: 0.8em;
+        background: #666;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        #menuList ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            list-style-image: none;
+            display: block;
+        }
+
+        #menuList li {
+            display: block;
+            padding: 0px;
+            border-bottom: #1d1f20 1px solid;
+            height: auto;
+            float: none !important;
+        }
+
+            #menuList li a:hover {
+            
+                background: #181818;
+                border-bottom: #1d1f20 1px solid;
+            }
+        #menuList a {
+            display: block;
+            height: 100%;
+        }
+
+        #menuList a:link, #menuList nav a:visited {
+            color: #fff !important;
+            display: block;
+            padding: 10px 25px;
+            height: 20px;
+        }
+
+
+
+            .mainHeader nav a:hover, .mainHeader nav a:active,
+        .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+            background-color: #B00101;
+            text-shadow: none;
+            height: 20px;
+        }
+
+        #menuList a {
+            text-decoration: none;
+            color: white;
+        }
+
+            #menuList a:hover {
+                text-decoration: none;
+                color: white;
+            }
+}
+
+@media only screen and (min-width: 740px ) {
+    #menuList {
+        display: block;
+    }
+}
+
+/*@media only screen and (max-width: 550px) {
+}*/
