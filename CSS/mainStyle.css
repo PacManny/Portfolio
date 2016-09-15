@@ -128,15 +128,15 @@ a {
                 float: left;
                 display: inline;
             }
-
-        .mainHeader nav a:link, .mainHeader nav a:visited {
+             .mainHeader nav li{
             /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0a0a0a+51,666666+100&0+1,0.58+58,0.65+100 */
           background: -moz-linear-gradient(top,  rgba(10,10,10,0) 1%, rgba(10,10,10,0.51) 51%, rgba(23,23,23,0.58) 58%, rgba(102,102,102,0.65) 100%); /* FF3.6-15 */
           background: -webkit-linear-gradient(top,  rgba(10,10,10,0) 1%,rgba(10,10,10,0.51) 51%,rgba(23,23,23,0.58) 58%,rgba(102,102,102,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
           background: linear-gradient(to bottom,  rgba(10,10,10,0) 1%,rgba(10,10,10,0.51) 51%,rgba(23,23,23,0.58) 58%,rgba(102,102,102,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000a0a0a', endColorstr='#a6666666',GradientType=0 ); /* IE6-9 */
+        }
 
-
+        .mainHeader nav a:link, .mainHeader nav a:visited {
             color: #fff;
             display: inline-block;
             padding: 10px 25px;
@@ -145,9 +145,18 @@ a {
 
         .mainHeader nav a:hover, .mainHeader nav a:active,
         .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-            background-color: #B00101;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#870101+0,b00101+43,b00101+63,870101+100 */
+background: rgb(135,1,1); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(135,1,1,1) 0%, rgba(176,1,1,1) 43%, rgba(176,1,1,1) 63%, rgba(135,1,1,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(135,1,1,1) 0%,rgba(176,1,1,1) 43%,rgba(176,1,1,1) 63%,rgba(135,1,1,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(135,1,1,1) 0%,rgba(176,1,1,1) 43%,rgba(176,1,1,1) 63%,rgba(135,1,1,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#870101', endColorstr='#870101',GradientType=0 ); /* IE6-9 */
+
+
             text-shadow: none;
         }
+
+
 
 
 /*
@@ -195,7 +204,6 @@ a {
 
             #menuList li a:hover {
             
-                background: #181818;
                 border-bottom: #1d1f20 1px solid;
             }
         #menuList a {
@@ -203,31 +211,10 @@ a {
             height: 100%;
         }
 
-        #menuList a:link, #menuList nav a:visited {
-            color: #fff !important;
-            display: block;
-            padding: 10px 25px;
-            height: 20px;
-        }
-
-
-
-            .mainHeader nav a:hover, .mainHeader nav a:active,
-        .mainHeader nav .active a:link, .mainHeader nav .active a:visited {
-            background-color: #B00101;
-            text-shadow: none;
-            height: 20px;
-        }
-
         #menuList a {
             text-decoration: none;
             color: white;
         }
-
-            #menuList a:hover {
-                text-decoration: none;
-                color: white;
-            }
 }
 
 @media only screen and (min-width: 740px ) {
