@@ -1,11 +1,17 @@
 // JavaScript source code
 $(document).ready(function () {
 
-    $('#projectsAnchor').click(function () {
+    $(function() {
+        $("li").click(function() {
+            // remove classes from all
+            $("li").removeClass("active");
+            // add class to the one we clicked
+            $(this).addClass("active");
+            $('#mainBody').load("projects.html #projectsPage");
 
-        $('#mainBody').load("projects.html #projectsPage");
-        alert("loaded");
+        });
     });
+
 
     $('#ham-nav').click(function () {
 
