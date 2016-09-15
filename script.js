@@ -1,11 +1,11 @@
 // JavaScript source code
 $(document).ready(function () {
 
-    //$('#projectsAnchor').click(function () {
+    $('#projectsAnchor').click(function () {
 
-    //    $('#mainBody').load("projects.html #projectsPage");
-    //    alert("loaded");
-    //});
+        $('#mainBody').load("projects.html #projectsPage");
+        alert("loaded");
+    });
 
     $('#ham-nav').click(function () {
 
