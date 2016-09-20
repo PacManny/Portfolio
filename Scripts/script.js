@@ -1,13 +1,13 @@
 // JavaScript source code
 $(document).ready(function () {
-
+    $('head').append('<link rel="stylesheet" href="https://pacmanny.github.io/Notes-Website-Udacity/style.css" type="text/css" />')
     $(function() {
         $("li").click(function() {
             // remove classes from all
             $("li").removeClass("active");
             // add class to the one we clicked
             $(this).addClass("active");
-            $('#mainBody').load("projects.html #projectsPage");
+            $('#mainBody').load("https://pacmanny.github.io/Notes-Website-Udacity/index.html #content");
 
         });
     });
